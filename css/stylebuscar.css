@@ -66,13 +66,13 @@ nav ul li{
 nav ul li img{
     width: 90%;
     height: 90%;
-    background-image: url("/img/Narajanavertical.png");
+    background-image: url("img/Narajanavertical.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .nav-item{
     display: flex;
-    background-image:url("/img/Naranjahorizon.png");
+    background-image:url("img/Naranjahorizon.png");
     background-size: cover;
     width: 100%;
     justify-content: center;
@@ -84,17 +84,17 @@ nav ul li img{
     padding: 5px 0;
 }
 .pinchitos{
-    background-image: url("/img/superiorpinchitos.png");
+    background-image: url("img/superiorpinchitos.png");
     height: 32px;
     width: 100%;
 }
 .estrellas{
-    background-image: url("/img/fondobuscar2.png");
+    background-image: url("img/fondobuscar2.png");
     height: 200px;
     width: 100%;
 }
 main{ 
-    background-image: url("/img/Fondo.png");
+    background-image: url("img/Fondo.png");
     height:calc(100vh - 382px);
     width: 100%;
 }
