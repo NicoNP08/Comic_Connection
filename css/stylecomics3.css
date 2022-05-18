@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Far From Homecoming";
+    src: url("/fuente/Far-FromHomecomingUpdated.otf");
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-family:"Far From Homecoming";
+    font-size: 23px;
+}
+h2{
+    text-decoration: none;
+    font-family:"Far From Homecoming";
+    font-size: 40px;
+    color: #FA7F08;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FA7F08;
+    width:100%;
+    align-items: center;
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo{
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 390px;
+}
+.logo img{
+    width: 100%;
+}
+.titulo img{
+    margin: 10px;
+    margin-left: 50%;
+    width: 70%;
+    height: auto;
+    
+}
+nav ul{
+    display: flex;
+      
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li img{
+    width: 90%;
+    height: 90%;
+    background-image: url("/img/Narajanavertical.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{
+    display: flex;
+    background-image:url("/img/Naranjahorizon.png");
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+}
+.nav-item a{
+    color:black;
+    padding: 5px 0;
+}
+.pinchitos{
+    background-image: url("/img/superiorpinchitos.png");
+    height: 32px;
+    width: 100%;
+}
+main{
+    display: flex;
+    background-image: url("/img/fondoedif.jpg");
+    height: calc(100vh - 182px);
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.title-container{
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    padding: 50px;
+    margin-top: 70px;
+}
+.comic-container{
+    display: grid;
+    grid-template-rows: 200px 100px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin-right: 50px;
+}
+.comic-item{
+    font-family:"Far From Homecoming";
+    align-items: center;
+    font-size: 25px;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.comic-item img{
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+}
+.comic-item-Start{
+    grid-area: 1/1/3/3;
+}
+.comic-item-End{
+    grid-area: 2/3/4/5;
+}
+.comic-item-abajo{
+    grid-row: 3/4;
+}
+.comic-item::before{
+    content: "";
+    font-family:"Far From Homecoming";
+    background-color: #FEE401;
+    width: 100%;
+    height: 90%;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    z-index: -1;
+}
+.comic-item::after{
+    content: "";
+    font-family:"Far From Homecoming";
+    background-color: #F9211c;
+    width: 100%;
+    height: 40%;
+    bottom: -10px;
+    left: 10px;
+    position: absolute;
+    z-index: -1;
+}
+p{
+    align-items: center;
+    justify-content: center;
+    color: black;
+}

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Far From Homecoming";
+    src: url("/fuente/Far-FromHomecomingUpdated.otf");
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    font-family:"Far From Homecoming";
+    font-size: 23px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FA7F08;
+    width:100%;
+    align-items: center;
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo{
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    margin-top: 4%;
+    margin-left: 30%;
+    width: 22%;
+}
+.logo img{
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 50%;
+}
+.titulo img{
+    margin: 10px;
+    width: 70%;
+    height: auto;
+    
+}
+nav ul{
+    display: flex;
+      
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li img{
+    width: 90%;
+    height: 90%;
+    background-image: url("/img/Narajanavertical.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{
+    display: flex;
+    background-image:url("/img/Naranjahorizon.png");
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+}
+.nav-item a{
+    color:black;
+    padding: 5px 0;
+}
+.pinchitos{
+    background-image: url("/img/superiorpinchitos.png");
+    height: 32px;
+    width: 100%;
+}
+.estrellas{
+    background-image: url("/img/fondobuscar2.png");
+    height: 200px;
+    width: 100%;
+}
+main{ 
+    background-image: url("/img/Fondo.png");
+    height:calc(100vh - 382px);
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+    justify-content: start;
+}
+.buscador img{
+    width: 45px;
+    height: 45px;
+}
+.buscador input{
+    height: 45px;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    outline: none;
+}
+.buscador input:hover{
+    outline: none;
+    border: none;
+}
+.buscar-container{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    align-self: center;
+    grid-template-columns: repeat(5,1fr);
+    width: 95%;
+    gap: 40px;
+    margin: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+.buscar-item{
+    width: 100%;
+    background-color: #9EF8EE;
+    position: relative;
+}
+.buscar-item img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+ 
+}
+.buscar-item::before{
+    content: "";
+    font-family:"Far From Homecoming";
+    background-color: #FEE401;
+    width: 100%;
+    height: 90%;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    z-index: -1;
+    transform: rotateZ(-2deg);
+}
+.buscar-item::after{
+    content: "";
+    font-family:"Far From Homecoming";
+    background-color: #F9211c;
+    width: 100%;
+    height: 40%;
+    bottom: -10px;
+    left: 10px;
+    position: absolute;
+    z-index: -1;
+    transform: rotateZ(-2deg);
+}
